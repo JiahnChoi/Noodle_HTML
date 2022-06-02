@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dd</title>
+	<style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+		+img
+		{
+			border: 1px solid rgb(178,178,178);
+		}
+		#div_main
+		{
+            border: 1px solid rgb(216,215,215);
+			background-color:rgb(249,248,243);
+			padding : 20px
+		}
+		.inlinediv
+        {
+			display: inline-block;
+			vertical-align: top;
+		}
+		.inlinediv + div
+		{
+			margin:10px;
+		}
+		#rtitle
+        {
+            font-family: 'Noto Sans KR', sans-serif;
+			font-weight: bolder;
+			font-size:26px;
+			border-bottom: 4px solid orangered;
+			display: inline-block;
+		}
+		.ritems
+        {
+			display:inline-block;
+			border: 1px solid rgb(216,215,215);
+			background-color: white;
+			width:100px;
+			text-align: center;
+		}
+		.ritems img
+		{
+			width:50px;
+		}
+		.img_div
+		{
+			margin-left:10px;
+			width:80px;
+			border-bottom: 1px solid lightgray;
+		}
+		.ritemsinfo
+		{
+			margin: 10px;
+            font-size: 14px;
+			font-weight: bold;
+		}
+		.ritemsvalue
+        {
+            margin: 10px;
+            font-weight: bold;
+			font-size: 19px;
+		}
+	</style>
+</head>
+<body>
+<hr>
+<div id="div_main" class="inlinediv">
+<div class="inlinediv">
+	<img src="http://image.nongshim.com/non/pro/1597305362478.jpg" width='300' alt="dd">
+</div>
+<div class="inlinediv">
+	<div id="rtitle"><span>라면 이름</span></div>
+	<br>
+	<br>
+	
+	<div class="ritems">
+		<div class="img_div"><br><img src="icon/weight.png" alt="weight"><br>
+			<div class="ritemsinfo">중량</div>
+		</div>
+		<div id="val1" class="ritemsvalue">100</div>
+	</div>
+	<div class="ritems">
+		<div class="img_div"><br><img src="icon/bab.png" alt="weight"><br>
+			<div class="ritemsinfo">칼로리</div>
+		</div>
+		<div id="val2" class="ritemsvalue">1212</div>
+	</div>
+	<div class="ritems">
+		<div class="img_div"><br><img src="icon/clock.png" alt="weight"><br>
+			<div class="ritemsinfo">유통기한</div>
+		</div>
+		<div id="val3" class="ritemsvalue">6개월</div>
+	</div>
+	<div class="ritems">
+		<div class="img_div"><br><img src="icon/calender.png" alt="weight"><br>
+			<div class="ritemsinfo">출시년도</div>
+		</div>
+		<div id="val4" class="ritemsvalue">123123</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
