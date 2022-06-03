@@ -44,16 +44,52 @@ console.log(rdata);
 
 function infochanger(N)
 {
+    var rinfocard = document.getElementById("rinfocardvar");
+    var rgraph = document.getElementById("rgraphvar");
     var rtitle = document.getElementById("rtitleval");
     var rweight = document.getElementById("rweightval");
     var rcal = document.getElementById("rcalval");
     var rend = document.getElementById("rendval");
     var rbirth = document.getElementById("rbirthval");
     var rimg =  document.getElementById("rimgval");
+
+    rinfocard.style.display = "inline";
+    rgraph.style.display = "none";
     rtitle.innerText = rdata[N][0];
+    console.log(rtitle.innerText);
     rweight.innerText = rdata[N][1];
     rcal.innerText = rdata[N][2];
     rend.innerText = rdata[N][3] + "개월";
     rbirth.innerText = rdata[N][4].substr(0,4) + '.' + rdata[N][4].substr(4,2) + '.' + rdata[N][4].substr(6,2);
     rimg.src = rdata[N][5];
+}
+
+function graphchanger(N)
+{
+    var rinfocard = document.getElementById("rinfocardvar");
+    var rgraph = document.getElementById("rgraphvar");
+    var rchart1 = document.getElementById("rchart1var");
+    var rchart2 = document.getElementById("rchart2var");
+    var rchart3 = document.getElementById("rchart3var");
+    rinfocard.style.display = "none";
+    rgraph.style.display = "inline";
+    if(N === 1)
+    {
+        rchart1.style.display = "inline";
+        rchart2.style.display = "none";
+        rchart3.style.display = "none";
+    }
+    else if(N === 2)
+    {
+        rchart1.style.display = "none";
+        rchart2.style.display = "inline";
+        rchart3.style.display = "none";
+    }
+    else
+    {
+        rchart1.style.display = "none";
+        rchart2.style.display = "none";
+        rchart3.style.display = "inline";
+    }
+
 }

@@ -25,12 +25,11 @@
     let myChartOne = document.getElementById('myChartOne').getContext('2d');
     let myChartTwo = document.getElementById('myChartTwo').getContext('2d');
     let myChartThree = document.getElementById('myChartThree').getContext('2d');
-
     let barChartOne = new Chart(myChartOne, {
         type : 'line', //bar, pie, line, doughnut, polarArea
         data : {
             labels: [
-
+            
                 '우육탕 큰사발',
                 '역대 최고사발',
                 '돈탕면',
@@ -70,7 +69,7 @@
                 '순한너구리컵',
                 '볶음 너구리',
                 '신라면건면사발'
-              ],
+            ],
             datasets : [{
                 label : '칼로리',
                 data: [
@@ -122,13 +121,11 @@
             }]
         }
     });
-    myChartOne.width = 500;
-    console.log(myChartOne);
     let barChartTwo = new Chart(myChartTwo, {
         type : 'line', //bar, pie, line, doughnut, polarArea
         data : {
             labels: [
-
+            
                 '우육탕 큰사발',
                 '역대 최고사발',
                 '돈탕면',
@@ -168,7 +165,7 @@
                 '순한너구리컵',
                 '볶음 너구리',
                 '신라면건면사발'
-              ],
+            ],
             datasets : [{
                 label : '무게',
                 data: [
@@ -224,7 +221,7 @@
         type : 'line', //bar, pie, line, doughnut, polarArea
         data : {
             labels: [
-
+            
                 '우육탕 큰사발',
                 '역대 최고사발',
                 '돈탕면',
@@ -264,7 +261,7 @@
                 '순한너구리컵',
                 '볶음 너구리',
                 '신라면건면사발'
-              ],
+            ],
             datasets : [{
                 label : '출시시기',
                 data: [
@@ -316,7 +313,6 @@
             }]
         }
     });
-    console.log(barChartThree);
 </script>
 </body>
 </html>

@@ -122,3 +122,12 @@
     font-weight: bold;
     font-size: 19px;
 }
+
+#rinfocardvar
+{
+    display: none;
+}
+#rgraphvar
+{
+    display: none;
+}

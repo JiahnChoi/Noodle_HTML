@@ -4,18 +4,22 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>noodle_html</title>
-	
-	<!-- CSS only -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<!-- Custom styles for this template -->
+	<!--차트에 관한 자바스크립트-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+	<!--부트스트랩 css 불러오기-->
+	<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!--사이드바 css 불러오기-->
 	<link href="sidebars.css" rel="stylesheet">
+	<!--사용자 정의 css 불러오기-->
 	<link href="style.css" rel="stylesheet">
+	<!--jquery관련 함수 불러오기-->
 	<script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
 	<script src="jquery-csv.js"></script>
+	<!--사용자 정의 js 불러오기-->
 	<script src="main_func.js"></script>
 </head>
 <body>
-
+<!--해더 부분-->
 <header class="navbar navbar-expand navbar-dark bg-dark bd-navbar">
 	<a class="navbar-brand" href="#">라면라면</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +34,7 @@
 		</ul>
 	</div>
 </header>
-
+<!--이미지 파일 불러오기 / 이건 필요 없어져야함-->
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
 	<symbol id="bootstrap" viewBox="0 0 118 94">
 		<title>Bootstrap</title>
@@ -89,14 +93,16 @@
 		<path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
 	</symbol>
 </svg>
-
+<!--메인화면-->
 <main class="d-flex flex-nowrap">
+	<!--사이드 바-->
 	<div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
 		<a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
 			<svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
 			<span class="fs-5 fw-semibold">농심관</span>
 		</a>
 		<ul class="list-unstyled ps-0">
+			<!--컵라면 정보 부분-->
 			<li class="mb-1">
 				<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
 					컵라면 정보 보기
@@ -137,72 +143,50 @@
 					</ul>
 				</div>
 			</li>
+			<!--통계 부분-->
 			<li class="mb-1">
 				<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
 					통계 확인하기
 				</button>
 				<div class="collapse" id="dashboard-collapse">
 					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-						<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Overview</a></li>
-						<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Weekly</a></li>
-						<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Monthly</a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="mb-1">
-				<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-					Orders
-				</button>
-				<div class="collapse" id="orders-collapse">
-					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-						<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New</a></li>
-						<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Processed</a></li>
-						<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Shipped</a></li>
-						<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Returned</a></li>
+						<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="graphchanger(1)">칼로리</a></li>
+						<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="graphchanger(2)">중량</a></li>
+						<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="graphchanger(3)">출시년도</a></li>
 					</ul>
 				</div>
 			</li>
 			<li class="border-top my-3"></li>
-			<li class="mb-1">
-				<button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-					Account
-				</button>
-				<div class="collapse" id="account-collapse">
-					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-						<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">New...</a></li>
-						<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Profile</a></li>
-						<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Settings</a></li>
-						<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">Sign out</a></li>
-					</ul>
-				</div>
-			</li>
 		</ul>
 	</div>
 	<div class="b-example-divider b-example-vr"></div>
-	<div class="card mb-3" style="width: 300px; margin: 10px;"> <!--메인화면 컵라면 정보카드-->
+	<!--메인화면 컵라면 정보카드-->
+	<div class="card mb-3" id="rinfocardvar" style="width: 300px; margin: 10px;">
 		<img id="rimgval" src="https://w.namu.la/s/51f656cb58ffc529724fc1f62dc055430f035f937344cda61f6abcfa0e5001e2bc0cd13ae4a192b30962943a5526da6554ae6445388ced9d468e24369ed4b1f7fc3b45cd022a11d11dfb56bdda193d6b03ad1a09d386eaa0375edf6f9a6566f9e5e60563ddec46219e85888ece97762e" class="card-img-top" alt="...">
 		<div class="card-body">
-			<div id="rtitle"><span id="rtitleval">라면 이름</span></div>
-			<br>
-			<br>
+			<div id="rtitle"><span id="rtitleval">라면 이름</span></div><br><br>
+			<!--중량-->
 			<div class="ritems">
 				<div class="img_div"><br><img src="icon/weight.png" alt="weight"><br>
 					<div class="ritemsinfo">중량</div>
 				</div>
 				<div id="val1" class="ritemsvalue"><span id="rweightval">0000</span></div>
 			</div>
+			<!--칼로리-->
 			<div class="ritems">
 				<div class="img_div"><br><img src="icon/bab.png" alt="weight"><br>
 					<div class="ritemsinfo">칼로리</div>
 				</div>
 				<div id="val2" class="ritemsvalue"><span id="rcalval">0000</span></div>
 			</div>
+			<!--유통기한-->
 			<div class="ritems">
 				<div class="img_div"><br><img src="icon/clock.png" alt="weight"><br>
 					<div class="ritemsinfo">유통기한</div>
 				</div>
 				<div id="val3" class="ritemsvalue"><span id="rendval">0개월</span></div>
 			</div>
+			<!--출시년도-->
 			<div class="ritems">
 				<div class="img_div"><br><img src="icon/calender.png" alt="weight"><br>
 					<div class="ritemsinfo">출시년도</div>
@@ -211,8 +195,26 @@
 			</div>
 		</div>
 	</div>
+	<!--메인화면 컵라면 통계-->
+	<div class="container" id="rgraphvar">
+		<div class="row">
+			<div class="col-md-12" id="rchart1var">
+				<canvas id="Chart1" width="1000"></canvas>
+			</div>
+			<div class="col-md-12" id="rchart2var">
+				<canvas id="Chart2" width="1000"></canvas>
+			</div>
+			<div class="col-md-12" id="rchart3var">
+				<canvas id="Chart3" width="1000"></canvas>
+			</div>
+		</div>
+	</div>
 </main>
+
 <script src="sidebars.js"></script>
 <script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+<!--그래프 데이터 정의 js 불러오기-->
+<script src="ChartMaker.js"></script>
 </body>
 </html>
