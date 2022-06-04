@@ -104,6 +104,14 @@
 {
     width:60px;
 }
+#sidestyle
+{
+    width: 280px;
+    float:left;
+    border-right:1px solid rgb(223,223,223);
+    border-bottom:1px solid rgb(223,223,223);
+    display:inline-block;
+}
 .img_div
 {
     margin-left:20px;
@@ -126,8 +134,17 @@
 #rinfocardvar
 {
     display: none;
+    float:left;
 }
 #rgraphvar
 {
     display: none;
+    float:left;
+}
+.personalinfo
+{
+    display: none;
+    float:left;
+    width: 18rem;
+    margin:10px;
 }

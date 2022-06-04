@@ -52,7 +52,13 @@ function infochanger(N)
     var rend = document.getElementById("rendval");
     var rbirth = document.getElementById("rbirthval");
     var rimg =  document.getElementById("rimgval");
-
+    var mainst = document.getElementsByTagName("main");
+    mainst[0].style.overflow = "visible";
+    var personal = document.getElementsByClassName("personalinfo");
+    for(var i = 0; i < 4; i++)
+    {
+        personal[i].style.display = "none";
+    }
     rinfocard.style.display = "inline";
     rgraph.style.display = "none";
     rtitle.innerText = rdata[N][0];
@@ -71,8 +77,15 @@ function graphchanger(N)
     var rchart1 = document.getElementById("rchart1var");
     var rchart2 = document.getElementById("rchart2var");
     var rchart3 = document.getElementById("rchart3var");
+    var personal = document.getElementsByClassName("personalinfo");
+    var mainst = document.getElementsByTagName("main");
+    mainst[0].style.overflow = "hidden";
+    for(var i = 0; i < 4; i++)
+    {
+        personal[i].style.display = "none";
+    }
     rinfocard.style.display = "none";
-    rgraph.style.display = "inline";
+    rgraph.style.display = "inline-block";
     if(N === 1)
     {
         rchart1.style.display = "inline";
@@ -92,4 +105,19 @@ function graphchanger(N)
         rchart3.style.display = "inline";
     }
 
+}
+
+function personal()
+{
+    var rinfocard = document.getElementById("rinfocardvar");
+    var rgraph = document.getElementById("rgraphvar");
+    var mainst = document.getElementsByTagName("main");
+    mainst[0].style.overflow = "auto";
+    var personal = document.getElementsByClassName("personalinfo");
+    rinfocard.style.display = "none";
+    rgraph.style.display = "none";
+    for(var i = 0; i < 4; i++)
+    {
+        personal[i].style.display = "inline";
+    }
 }
