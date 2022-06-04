@@ -73,7 +73,6 @@ function infochanger(N)
     rbirth.innerText = rdata[N][4].substr(0,4) + '.' + rdata[N][4].substr(4,2) + '.' + rdata[N][4].substr(6,2);
     rimg.src = rdata[N][5];
 }
-
 function graphchanger(N)
 {
     var rinfocard = document.getElementById("rinfocardvar");
@@ -112,7 +111,6 @@ function graphchanger(N)
     }
 
 }
-
 function personal()
 {
     var rinfocard = document.getElementById("rinfocardvar");
@@ -127,5 +125,21 @@ function personal()
     for(var i = 0; i < 4; i++)
     {
         personal[i].style.display = "inline";
+    }
+}
+function mainreturn()
+{
+    var rinfocard = document.getElementById("rinfocardvar");
+    var rgraph = document.getElementById("rgraphvar");
+    var mainst = document.getElementsByTagName("main");
+    var rmain = document.getElementById("rmainsrc");
+    mainst[0].style.overflow = "auto";
+    var personal = document.getElementsByClassName("personalinfo");
+    rmain.style.display = "inline";
+    rinfocard.style.display = "none";
+    rgraph.style.display = "none";
+    for(var i = 0; i < 4; i++)
+    {
+        personal[i].style.display = "none";
     }
 }
