@@ -1,3 +1,4 @@
+//dataset with csv
 var csvdata = "Cup_Name,Weight,Calorie,Exp_Date,Birth,href\n" +
     "우육탕큰사발,115,520,6,19890928,http://image.nongshim.com/non/pro/1597305362478.jpg\n" +
     "새우탕큰사발,115,510,6,19890800,http://image.nongshim.com/non/pro/1598514635828.jpg\n" +
@@ -53,12 +54,15 @@ function infochanger(N)
     var rbirth = document.getElementById("rbirthval");
     var rimg =  document.getElementById("rimgval");
     var mainst = document.getElementsByTagName("main");
+    var rmain = document.getElementById("rmainsrc");
     mainst[0].style.overflow = "visible";
+    mainst[0].style.height = "100%";
     var personal = document.getElementsByClassName("personalinfo");
     for(var i = 0; i < 4; i++)
     {
         personal[i].style.display = "none";
     }
+    rmain.style.display = "none";
     rinfocard.style.display = "inline";
     rgraph.style.display = "none";
     rtitle.innerText = rdata[N][0];
@@ -79,11 +83,13 @@ function graphchanger(N)
     var rchart3 = document.getElementById("rchart3var");
     var personal = document.getElementsByClassName("personalinfo");
     var mainst = document.getElementsByTagName("main");
+    var rmain = document.getElementById("rmainsrc");
     mainst[0].style.overflow = "hidden";
     for(var i = 0; i < 4; i++)
     {
         personal[i].style.display = "none";
     }
+    rmain.style.display = "none";
     rinfocard.style.display = "none";
     rgraph.style.display = "inline-block";
     if(N === 1)
@@ -112,8 +118,10 @@ function personal()
     var rinfocard = document.getElementById("rinfocardvar");
     var rgraph = document.getElementById("rgraphvar");
     var mainst = document.getElementsByTagName("main");
+    var rmain = document.getElementById("rmainsrc");
     mainst[0].style.overflow = "auto";
     var personal = document.getElementsByClassName("personalinfo");
+    rmain.style.display = "none";
     rinfocard.style.display = "none";
     rgraph.style.display = "none";
     for(var i = 0; i < 4; i++)
