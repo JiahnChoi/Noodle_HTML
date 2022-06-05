@@ -43,9 +43,10 @@ var csvdata = "Cup_Name,Weight,Calorie,Exp_Date,Birth,href\n" +
 rdata = $.csv.toArrays(csvdata);
 console.log(rdata);
 
-function infochanger(N)
+function infochanger(N, ext)
 {
     var rinfocard = document.getElementById("rinfocardvar");
+    var rinfocard2 = document.getElementById("rinfocardvar2");
     var rgraph = document.getElementById("rgraphvar");
     var rtitle = document.getElementById("rtitleval");
     var rweight = document.getElementById("rweightval");
@@ -53,9 +54,15 @@ function infochanger(N)
     var rend = document.getElementById("rendval");
     var rbirth = document.getElementById("rbirthval");
     var rimg =  document.getElementById("rimgval");
+    var rtitle2 = document.getElementById("rtitleval2");
+    var rweight2 = document.getElementById("rweightval2");
+    var rcal2 = document.getElementById("rcalval2");
+    var rend2 = document.getElementById("rendval2");
+    var rbirth2 = document.getElementById("rbirthval2");
+    var rimg2 =  document.getElementById("rimgval2");
     var mainst = document.getElementsByTagName("main");
     var rmain = document.getElementById("rmainsrc");
-    mainst[0].style.overflow = "visible";
+    mainst[0].style.overflow = "auto";
     mainst[0].style.height = "100%";
     var personal = document.getElementsByClassName("personalinfo");
     for(var i = 0; i < 4; i++)
@@ -64,18 +71,30 @@ function infochanger(N)
     }
     rmain.style.display = "none";
     rinfocard.style.display = "inline";
+    rinfocard2.style.display = "none";
     rgraph.style.display = "none";
     rtitle.innerText = rdata[N][0];
-    console.log(rtitle.innerText);
     rweight.innerText = rdata[N][1];
     rcal.innerText = rdata[N][2];
     rend.innerText = rdata[N][3] + "개월";
     rbirth.innerText = rdata[N][4].substr(0,4) + '.' + rdata[N][4].substr(4,2) + '.' + rdata[N][4].substr(6,2);
     rimg.src = rdata[N][5];
+
+    if(ext === 1)
+    {
+        rinfocard2.style.display = "inline";
+        rtitle2.innerText = rdata[N+1][0];
+        rweight2.innerText = rdata[N+1][1];
+        rcal2.innerText = rdata[N+1][2];
+        rend2.innerText = rdata[N+1][3] + "개월";
+        rbirth2.innerText = rdata[N+1][4].substr(0,4) + '.' + rdata[N][4].substr(4,2) + '.' + rdata[N][4].substr(6,2);
+        rimg2.src = rdata[N+1][5];
+    }
 }
 function graphchanger(N)
 {
     var rinfocard = document.getElementById("rinfocardvar");
+    var rinfocard2 = document.getElementById("rinfocardvar2");
     var rgraph = document.getElementById("rgraphvar");
     var rchart1 = document.getElementById("rchart1var");
     var rchart2 = document.getElementById("rchart2var");
@@ -90,6 +109,7 @@ function graphchanger(N)
     }
     rmain.style.display = "none";
     rinfocard.style.display = "none";
+    rinfocard2.style.display = "none";
     rgraph.style.display = "inline-block";
     if(N === 1)
     {
@@ -114,6 +134,7 @@ function graphchanger(N)
 function personal()
 {
     var rinfocard = document.getElementById("rinfocardvar");
+    var rinfocard2 = document.getElementById("rinfocardvar2");
     var rgraph = document.getElementById("rgraphvar");
     var mainst = document.getElementsByTagName("main");
     var rmain = document.getElementById("rmainsrc");
@@ -121,6 +142,7 @@ function personal()
     var personal = document.getElementsByClassName("personalinfo");
     rmain.style.display = "none";
     rinfocard.style.display = "none";
+    rinfocard2.style.display = "none";
     rgraph.style.display = "none";
     for(var i = 0; i < 4; i++)
     {
@@ -130,6 +152,7 @@ function personal()
 function mainreturn()
 {
     var rinfocard = document.getElementById("rinfocardvar");
+    var rinfocard2 = document.getElementById("rinfocardvar2");
     var rgraph = document.getElementById("rgraphvar");
     var mainst = document.getElementsByTagName("main");
     var rmain = document.getElementById("rmainsrc");
@@ -137,6 +160,7 @@ function mainreturn()
     var personal = document.getElementsByClassName("personalinfo");
     rmain.style.display = "inline";
     rinfocard.style.display = "none";
+    rinfocard2.style.display = "none";
     rgraph.style.display = "none";
     for(var i = 0; i < 4; i++)
     {

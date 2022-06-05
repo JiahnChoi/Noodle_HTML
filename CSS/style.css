@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.bd-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1071;
+    min-height: 4rem;
+    box-shadow: 0 0.5rem 1rem rgba(240, 130, 130, 0.05), inset 0 -1px 0 rgba(0,0,0,.1);
+}
+
+.bd-sidebar {
+    position: sticky;
+    top: 4rem;
+    z-index: 1000;
+    height: calc(100vh - 4rem);
+    background: rgb(250, 231, 231);
+    border-right: 1px solid rgba(0,0,0,.1);
+    overflow-y: auto;
+    min-width: 160px;
+    max-width: 220px;
+}
+
+.bd-sidebar .nav {
+    display: block;
+}
+
+.bd-sidebar .nav>li>a {
+    display: block;
+    padding: .25rem 1.5rem;
+    font-size: 90%;
+}
+
++img
+{
+    border: 1px solid rgb(178,178,178);
+}
+#rtitle
+{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bolder;
+    font-size:26px;
+    border-bottom: 4px solid orangered;
+    display: inline-block;
+}
+#rtitle2
+{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bolder;
+    font-size:26px;
+    border-bottom: 4px solid orangered;
+    display: inline-block;
+}
+.ritems
+{
+    display:inline-block;
+    border: 1px solid rgb(216,215,215);
+    background-color: white;
+    width:130px;
+    text-align: center;
+    margin-bottom : 5px;
+}
+.ritems img
+{
+    width:60px;
+}
+#sidestyle
+{
+    width: 280px;
+    float:left;
+    border-right:1px solid rgb(223,223,223);
+    border-bottom:1px solid rgb(223,223,223);
+    display:inline-block;
+}
+.img_div
+{
+    margin-left:20px;
+    width:90px;
+    border-bottom: 1px solid lightgray;
+}
+.ritemsinfo
+{
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.ritemsvalue
+{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+#rinfocardvar
+{
+    display: none;
+    float:left;
+}
+#rinfocardvar2
+{
+    display: none;
+    float:left;
+}
+#rgraphvar
+{
+    display: none;
+    float:left;
+}
+.personalinfo
+{
+    display: none;
+    float:left;
+    width: 18rem;
+    margin:10px;
+}
+.ll {display: block; text-align: center; padding-top: 15px; margin: 20px auto; width: 80%; max-width: 450px; }
+.aa {margin-top: 50px;}
+.bb {margin-bottom: 50px;}
+.cc {max-width: 100%; max-height: auto; display: block; margin: auto 0;}
+.dd {float: left;}
+.hh {float: left; margin-right: 20px;}
+.ee {clear: both;}
+.ff {max-width: 200px; width: 80%;}
+.rr {display: block; margin: 20px auto;}
+.ooo {background: linear-gradient( to right, black 68%, red);}

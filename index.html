@@ -9,14 +9,15 @@
 	<!--부트스트랩 css 불러오기-->
 	<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 	<!--사이드바 css 불러오기-->
-	<link href="sidebars.css" rel="stylesheet">
+	<link href="CSS/sidebars.css" rel="stylesheet">
 	<!--사용자 정의 css 불러오기-->
-	<link href="style.css" rel="stylesheet">
+	<link href="CSS/style.css" rel="stylesheet">
 	<!--jquery관련 함수 불러오기-->
-	<script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
-	<script src="jquery-csv.js"></script>
+	<script type="text/JavaScript" src="JS/jquery.min.js" ></script>
+	<script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+	<script src="JS/jquery-csv.js"></script>
 	<!--사용자 정의 js 불러오기-->
-	<script src="main_func.js"></script>
+	<script src="JS/main_func.js"></script>
 </head>
 <body>
 <!--해더 부분-->
@@ -49,37 +50,37 @@
 			</button>
 			<div class="collapse" id="ramen-collapse">
 				<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(1)">우육탕큰사발</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(2)">새우탕컵면</a></li> <!--큰-->
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(4)">무파마큰사발</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(5)">맛짬뽕큰사발</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(6)">김치사발면</a></li> <!--큰-->
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(8)">짜왕큰사발</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(9)">안성탕면컵</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(10)">신라면컵</a></li> <!--큰-->
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(13)">튀김우동컵</a></li> <!--큰-->
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(15)">사리곰탕컵</a></li> <!--큰-->
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(16)">감자면큰사발</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(17)">앵그리짜파구리큰사발</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(18)">신라면블랙사발두부김치</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(19)">신라면블랙사발</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(21)">카구리큰사발면</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(21)">특육개장큰사발면</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(22)">보글보글부대찌개큰사발면</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(23)">농심쌀국수</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(24)">농심쌀국수소고기장국</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(25)">오징어짬뽕컵</a></li> <!--큰-->
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(27)">짜파게티범벅</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(28)">짜파게티큰사발</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(29)">사천짜파게티큰사발</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(30)">신라면볶음면큰사발</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(31)">신볶게티큰사발면</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(32)">생생우동용기</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(33)">육개장사발면</a></li> <!--큰-->
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(35)">너구리컵</a></li> <!--큰-->
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(37)">순한너구리컵</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(38)">볶음너구리큰사발</a></li>
-					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(39)">신라면건면사발</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(1,0)">우육탕큰사발</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(2,1)">새우탕컵면</a></li> <!--큰-->
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(4,0)">무파마큰사발</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(5,0)">맛짬뽕큰사발</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(6,1)">김치사발면</a></li> <!--큰-->
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(8,0)">짜왕큰사발</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(9,0)">안성탕면컵</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(10,1)">신라면컵</a></li> <!--큰-->
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(13,1)">튀김우동컵</a></li> <!--큰-->
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(15,0)">사리곰탕컵</a></li> <!--큰-->
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(16,0)">감자면큰사발</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(17,0)">앵그리짜파구리큰사발</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(18,0)">신라면블랙사발두부김치</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(19,0)">신라면블랙사발</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(21,0)">카구리큰사발면</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(21,0)">특육개장큰사발면</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(22,0)">보글보글부대찌개큰사발면</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(23,0)">농심쌀국수</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(24,0)">농심쌀국수소고기장국</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(25,1)">오징어짬뽕컵</a></li> <!--큰-->
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(27,0)">짜파게티범벅</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(28,0)">짜파게티큰사발</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(29,0)">사천짜파게티큰사발</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(30,0)">신라면볶음면큰사발</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(31,0)">신볶게티큰사발면</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(32,0)">생생우동용기</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(33,1)">육개장사발면</a></li> <!--큰-->
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(35,1)">너구리컵</a></li> <!--큰-->
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(37,0)">순한너구리컵</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(38,0)">볶음너구리큰사발</a></li>
+					<li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded" onclick="infochanger(39,0)">신라면건면사발</a></li>
 				</ul>
 			</div>
 		</li>
@@ -209,40 +210,87 @@
 		</div>
 	</div>
 	<!--메인화면 컵라면 정보카드-->
-	<div class="card mb-3" id="rinfocardvar" style="width: 300px; margin: 10px; height:100%;">
-	<img id="rimgval" src="https://w.namu.la/s/51f656cb58ffc529724fc1f62dc055430f035f937344cda61f6abcfa0e5001e2bc0cd13ae4a192b30962943a5526da6554ae6445388ced9d468e24369ed4b1f7fc3b45cd022a11d11dfb56bdda193d6b03ad1a09d386eaa0375edf6f9a6566f9e5e60563ddec46219e85888ece97762e" class="card-img-top" alt="...">
-	<div class="card-body">
-		<div id="rtitle"><span id="rtitleval">라면 이름</span></div><br><br>
-		<!--중량-->
-		<div class="ritems">
-			<div class="img_div"><br><img src="icon/weight.png" alt="weight"><br>
-				<div class="ritemsinfo">중량</div>
+	<div class="card mb-3" id="rinfocardvar" style="max-width: 70%; margin: 10px; height:100%;">
+		<div class="row g-0">
+			<div class="col-md-4">
+				<img id="rimgval" src="https://w.namu.la/s/51f656cb58ffc529724fc1f62dc055430f035f937344cda61f6abcfa0e5001e2bc0cd13ae4a192b30962943a5526da6554ae6445388ced9d468e24369ed4b1f7fc3b45cd022a11d11dfb56bdda193d6b03ad1a09d386eaa0375edf6f9a6566f9e5e60563ddec46219e85888ece97762e" class="card-img-top" alt="...">
 			</div>
-			<div id="val1" class="ritemsvalue"><span id="rweightval">0000</span></div>
-		</div>
-		<!--칼로리-->
-		<div class="ritems">
-			<div class="img_div"><br><img src="icon/bab.png" alt="weight"><br>
-				<div class="ritemsinfo">칼로리</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<div id="rtitle"><span id="rtitleval">라면 이름</span></div><br><br>
+					<!--중량-->
+					<div class="ritems">
+						<div class="img_div"><br><img src="icon/weight.png" alt="weight"><br>
+							<div class="ritemsinfo">중량</div>
+						</div>
+						<div id="val1" class="ritemsvalue"><span id="rweightval">0000</span></div>
+					</div>
+					<!--칼로리-->
+					<div class="ritems">
+						<div class="img_div"><br><img src="icon/bab.png" alt="weight"><br>
+							<div class="ritemsinfo">칼로리</div>
+						</div>
+						<div id="val2" class="ritemsvalue"><span id="rcalval">0000</span></div>
+					</div>
+					<!--유통기한-->
+					<div class="ritems">
+						<div class="img_div"><br><img src="icon/clock.png" alt="weight"><br>
+							<div class="ritemsinfo">유통기한</div>
+						</div>
+						<div id="val3" class="ritemsvalue"><span id="rendval">0개월</span></div>
+					</div>
+					<!--출시년도-->
+					<div class="ritems">
+						<div class="img_div"><br><img src="icon/calender.png" alt="weight"><br>
+							<div class="ritemsinfo">출시년도</div>
+						</div>
+						<div id="val4" class="ritemsvalue"><span id="rbirthval">0000</span></div>
+					</div>
+				</div>
 			</div>
-			<div id="val2" class="ritemsvalue"><span id="rcalval">0000</span></div>
-		</div>
-		<!--유통기한-->
-		<div class="ritems">
-			<div class="img_div"><br><img src="icon/clock.png" alt="weight"><br>
-				<div class="ritemsinfo">유통기한</div>
-			</div>
-			<div id="val3" class="ritemsvalue"><span id="rendval">0개월</span></div>
-		</div>
-		<!--출시년도-->
-		<div class="ritems">
-			<div class="img_div"><br><img src="icon/calender.png" alt="weight"><br>
-				<div class="ritemsinfo">출시년도</div>
-			</div>
-			<div id="val4" class="ritemsvalue"><span id="rbirthval">0000</span></div>
 		</div>
 	</div>
+	<div class="card mb-3" id="rinfocardvar2" style="max-width: 70%; margin: 10px; height:100%;">
+		<div class="row g-0">
+			<div class="col-md-4">
+				<img id="rimgval2" src="https://w.namu.la/s/51f656cb58ffc529724fc1f62dc055430f035f937344cda61f6abcfa0e5001e2bc0cd13ae4a192b30962943a5526da6554ae6445388ced9d468e24369ed4b1f7fc3b45cd022a11d11dfb56bdda193d6b03ad1a09d386eaa0375edf6f9a6566f9e5e60563ddec46219e85888ece97762e" class="card-img-top" alt="...">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<div id="rtitle2"><span id="rtitleval2">라면 이름</span></div><br><br>
+					<!--중량-->
+					<div class="ritems">
+						<div class="img_div"><br><img src="icon/weight.png" alt="weight"><br>
+							<div class="ritemsinfo">중량</div>
+						</div>
+						<div id="val12" class="ritemsvalue"><span id="rweightval2">0000</span></div>
+					</div>
+					<!--칼로리-->
+					<div class="ritems">
+						<div class="img_div"><br><img src="icon/bab.png" alt="weight"><br>
+							<div class="ritemsinfo">칼로리</div>
+						</div>
+						<div id="val22" class="ritemsvalue"><span id="rcalval2">0000</span></div>
+					</div>
+					<!--유통기한-->
+					<div class="ritems">
+						<div class="img_div"><br><img src="icon/clock.png" alt="weight"><br>
+							<div class="ritemsinfo">유통기한</div>
+						</div>
+						<div id="val32" class="ritemsvalue"><span id="rendval2">0개월</span></div>
+					</div>
+					<!--출시년도-->
+					<div class="ritems">
+						<div class="img_div"><br><img src="icon/calender.png" alt="weight"><br>
+							<div class="ritemsinfo">출시년도</div>
+						</div>
+						<div id="val42" class="ritemsvalue"><span id="rbirthval2">0000</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+	
 	<!--메인화면 컵라면 통계-->
 	<div class="container-fluid" id="rgraphvar">
 		<div class="row">
@@ -258,6 +306,7 @@
 		</div>
 	</div>
 	<!--자기소개-->
+	<!--최민석-->
 	<div class="card personalinfo">
 		<img src="ProfileImg/Minseok.jpg" class="card-img-top" alt="...">
 		<div class="card-body">
@@ -267,12 +316,12 @@
 		<ul class="list-group list-group-flush">
 			<li class="list-group-item">취미 : 게임, 음악듣기</li>
 			<li class="list-group-item">MBTI : INFJ</li>
-			<li class="list-group-item">전광석화</li>
 		</ul>
 		<div class="card-body">
 			<a href="https://lemon7z.tistory.com/" class="card-link">블로그</a>
 		</div>
 	</div>
+	
 	<div class="card personalinfo">
 		<img src="https://w.namu.la/s/51f656cb58ffc529724fc1f62dc055430f035f937344cda61f6abcfa0e5001e2bc0cd13ae4a192b30962943a5526da6554ae6445388ced9d468e24369ed4b1f7fc3b45cd022a11d11dfb56bdda193d6b03ad1a09d386eaa0375edf6f9a6566f9e5e60563ddec46219e85888ece97762e" class="card-img-top" alt="...">
 		<div class="card-body">
@@ -302,27 +351,24 @@
 			<li class="list-group-item">콩BTI : ENTP</li>
 		</ul>
 	</div>
+	<!--최유찬-->
 	<div class="card personalinfo">
 		<img src="https://w.namu.la/s/51f656cb58ffc529724fc1f62dc055430f035f937344cda61f6abcfa0e5001e2bc0cd13ae4a192b30962943a5526da6554ae6445388ced9d468e24369ed4b1f7fc3b45cd022a11d11dfb56bdda193d6b03ad1a09d386eaa0375edf6f9a6566f9e5e60563ddec46219e85888ece97762e" class="card-img-top" alt="...">
 		<div class="card-body">
-			<h5 class="card-title">피카츄</h5>
-			<p class="card-text">처음 보는 것에게는 전격을 맞춘다. 새까맣게 탄 나무열매가 떨어져 있다는 것은 전격의 세기를 조절하지 못했다는 증거다.</p>
+			<h5 class="card-title">최유찬</h5>
+			<p class="card-text">가천대학교 22학번 인공지능전공 03년생 최유찬입니다.<br>코딩이랑 모든게 처음이지만 열심히 하고 있습니다 </p>
 		</div>
 		<ul class="list-group list-group-flush">
-			<li class="list-group-item">전기 자석파</li>
-			<li class="list-group-item">10만볼트</li>
-			<li class="list-group-item">전광석화</li>
+			<li class="list-group-item">취미 : 게임, 드라마보기, 볼링</li>
+			<li class="list-group-item">MBTI : ISTP</li>
+			<li class="list-group-item">좋아하는 라면 : 너구리컵</li>
 		</ul>
-		<div class="card-body">
-			<a href="#" class="card-link">Card link</a>
-			<a href="#" class="card-link">Another link</a>
-		</div>
 	</div>
 </main>
-<script src="sidebars.js"></script>
+<script src="JS/sidebars.js"></script>
 <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
 <!--그래프 데이터 정의 js 불러오기-->
-<script src="ChartMaker.js"></script>
+<script src="JS/ChartMaker.js"></script>
 </body>
 </html>
